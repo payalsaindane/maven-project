@@ -20,7 +20,7 @@ pipeline {
    stage('Deploy') {
      steps {
        sshagent(['jenkins_master_private_key']) {
-                 sh "cp /home/jenkins/workspace/T4/webapp/target/webapp.war /opt/tomcat/webapps"
+                 sh "cp /home/jenkins/workspace/tomcat-pipeline1/webapp/target/webapp.war /opt/tomcat/webapps"
        }    
    }
   }
